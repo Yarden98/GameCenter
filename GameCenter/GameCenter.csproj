@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\2642427450733970b628aabc5691fb98.jpg" />
+    <None Remove="Images\8f6ea78c29e295339f8ba4851ffc4e07.jpg" />
+    <None Remove="Images\97d4f462a21a628219cf8239680507de.jpg" />
+    <None Remove="Images\9a85b9c985cc43186c2f89b81237598c.jpg" />
+    <None Remove="Images\profile.png" />
+    <None Remove="Images\square1.jpeg" />
+    <None Remove="Images\square2.png" />
+    <None Remove="Images\tic-tac-toe-two - Copy.png" />
+    <None Remove="Images\tic-tac-toe.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\2642427450733970b628aabc5691fb98.jpg" />
+    <Resource Include="Images\8f6ea78c29e295339f8ba4851ffc4e07.jpg" />
+    <Resource Include="Images\97d4f462a21a628219cf8239680507de.jpg" />
+    <Resource Include="Images\9a85b9c985cc43186c2f89b81237598c.jpg" />
+    <Resource Include="Images\profile.png" />
+    <Resource Include="Images\square1.jpeg" />
+    <Resource Include="Images\square2.png" />
+    <Resource Include="Images\tic-tac-toe.png" />
+  </ItemGroup>
+
+</Project>
