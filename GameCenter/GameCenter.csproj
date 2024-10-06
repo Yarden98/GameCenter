@@ -12,18 +12,29 @@
     <None Remove="Images\8f6ea78c29e295339f8ba4851ffc4e07.jpg" />
     <None Remove="Images\97d4f462a21a628219cf8239680507de.jpg" />
     <None Remove="Images\9a85b9c985cc43186c2f89b81237598c.jpg" />
+    <None Remove="Images\calculator2.png" />
+    <None Remove="Images\Car.png" />
+    <None Remove="Images\currency.png" />
+    <None Remove="Images\list-text.png" />
+    <None Remove="Images\microcar.png" />
     <None Remove="Images\profile.png" />
     <None Remove="Images\square1.jpeg" />
     <None Remove="Images\square2.png" />
+    <None Remove="Images\system.png" />
     <None Remove="Images\tic-tac-toe-two - Copy.png" />
     <None Remove="Images\tic-tac-toe.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\2642427450733970b628aabc5691fb98.jpg" />
-    <Resource Include="Images\8f6ea78c29e295339f8ba4851ffc4e07.jpg" />
-    <Resource Include="Images\97d4f462a21a628219cf8239680507de.jpg" />
-    <Resource Include="Images\9a85b9c985cc43186c2f89b81237598c.jpg" />
+    <Resource Include="Images\calculator2.png" />
+    <Resource Include="Images\Car.png" />
+    <Resource Include="Images\currency.png" />
+    <Resource Include="Images\list-text.png" />
+    <Resource Include="Images\microcar.png" />
+    <Resource Include="Images\system.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\profile.png" />
     <Resource Include="Images\square1.jpeg" />
     <Resource Include="Images\square2.png" />

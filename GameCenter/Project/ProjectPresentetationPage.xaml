@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ProjectPresentetationPage" Height="450" Width="800"
         WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Background="SlateGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"></ColumnDefinition>
             <ColumnDefinition Width="1*"></ColumnDefinition>
@@ -20,7 +20,22 @@
             <RowDefinition Height="0.3*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Rectangle Grid.RowSpan="4" Grid.ColumnSpan="3"  Fill="SlateGray"  />
+        <Image Source="/Images/profile.png" Panel.ZIndex="2" Width="30" Margin="15,-3,155,3"
+       OpacityMask="#FF4C4C4C"   MouseLeftButtonUp="GoBack"
+ MouseLeave="Mouse_Leave"/>
+
+        <Label 
+    x:Name="user"
+    Content="Yarden Naim"
+    FontWeight="Bold" 
+    FontSize="20" 
+    Panel.ZIndex="2" 
+    VerticalAlignment="Center"
+    HorizontalAlignment="Left" 
+    Margin="57,0,0,0" 
+    MouseLeftButtonUp="GoBack"
+    MouseLeave="Mouse_Leave"
+    />
 
         <Label x:Name="addUserTitle"
                Grid.Column="0"
@@ -31,65 +46,56 @@
                HorizontalContentAlignment="Center" 
                Background="AliceBlue"
                FontWeight="Bold"
-               FontSize="60"
+               FontSize="30"
         />
-        <Button x:Name="Btn_User" Background="AliceBlue" Click="Btn_User_Click">
-            <Grid Grid.Row="0" Grid.Column="0"  >
-                <Label x:Name="UserLabel"
-                   Content="Yarden naim"
-                   HorizontalContentAlignment="Left"
-                   VerticalContentAlignment="Center" 
-                   FontFamily="Arial Black" 
-                   FontSize="15" Margin="-42,-18,-17,-22" RenderTransformOrigin="0.484,0.491" />
-                <Image x:Name="ImageUSer1" Source="/Images/profile.png" Width="70" Margin="70,12,-44,14"   />
-            </Grid>
-        </Button>
+ 
 
 
-        <Label 
-    x:Name="DateLabel"
-    Content="Date" 
-    Grid.Row="0" 
-    Grid.Column="2" 
-    Grid.ColumnSpan="3" 
-    Background="AliceBlue"
-    HorizontalContentAlignment="Center"
-    VerticalContentAlignment="Center" 
-    FontFamily="Arial Black" 
-    FontSize="20"
-/>
-
-
-
-        <TextBox
-           x:Name="ProjectText"
-            Grid.Column="1"
-            Grid.Row="2"
-            VerticalAlignment="Top"
-            HorizontalAlignment="Center"
-            FontSize="16"
-              TextWrapping="Wrap"
-            VerticalScrollBarVisibility="Auto"
-            Background="SlateGray" Height="135" Width="300" Margin="0,39,0,0"
+        <Label
+            x:Name="date" 
+            Content=""
+            Grid.Row="0" 
+            Grid.Column="2"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontSize="20"
             />
 
+
+
+        <RichTextBox 
+    x:Name="ProjectText"
+    Grid.Column="1"
+    Grid.Row="2"
+    VerticalAlignment="Top"
+    FontSize="16"
+    VerticalScrollBarVisibility="Auto"
+    Background="SlateGray"
+    BorderThickness="0"
+    Height="178" 
+            Grid.ColumnSpan="2"
+    Margin="50,39,50,0"/>
+
+
+        
         <Image x:Name="ProjectImage"
                Grid.Column="0"
                Grid.Row="2"
                Margin="25"
                HorizontalAlignment="Center"
                VerticalAlignment="Center" 
-               
-               />
-
-        <StackPanel x:Name="Btn_stackPanel" Grid.Row="3" Grid.Column="1" >
-            <Button
-                    x:Name="Btn_click" 
-                Content="Click"
-                    Width="100"
-                    Height="25"
-                    Margin="5"
-                    Background="RosyBrown" Click="Btn_Next_Click"  />
-        </StackPanel>
+               MouseDown="Btn_Next_Click"
+               >
+        <Image.Style>
+            <Style TargetType="Image">
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Opacity" Value="0.7"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Image.Style>
+        </Image>
+     
     </Grid>
 </Window>

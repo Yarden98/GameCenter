@@ -1,5 +1,6 @@
 ﻿using GameCenter.Project.Porject2.Models;
 using GameCenter.Project.Porject2.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
@@ -91,9 +92,9 @@ namespace GameCenter.Project.Porject2
                 Input_Password.Text = ((TextBlock)passwordCell.Column.GetCellContent(passwordCell.Item)).Text;
                 _user = users.Single(item => item.Id.ToString() == id);
             }
-            catch
+            catch (Exception ex)
             {
-
+                  MessageBox.Show($"An error occurred: {ex.Message}");
             }
         }
 

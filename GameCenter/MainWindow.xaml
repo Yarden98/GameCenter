@@ -20,7 +20,7 @@
             <RowDefinition Height="0.5*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Rectangle Grid.RowSpan="3" Grid.ColumnSpan="3"  Fill="SlateGray"  />
+        <Rectangle Grid.RowSpan="4" Grid.ColumnSpan="3"  Fill="SlateGray"  />
 
         <Label x:Name="addUserTitle"
                Grid.Column="0"
@@ -29,13 +29,20 @@
                VerticalContentAlignment="Center"
                Content="Game center" 
                HorizontalContentAlignment="Center" 
-               Background="AliceBlue"
+               
                FontWeight="Bold"
                FontSize="60"
         />
 
-  
-               
+        <Grid>
+            <TextBlock FontSize="30" HorizontalAlignment="Right" Margin="0,40,64,31" Width="172" > 
+                Yarden Naim
+            </TextBlock>
+            <Image x:Name="ImageUSer1" Source="/Images/profile.png"  RenderTransformOrigin="0.569,0.539" Margin="-83,16,168,16"/>
+        </Grid>
+
+
+
 
         <Label 
     x:Name="DateLabel"
@@ -43,7 +50,7 @@
     Grid.Row="0" 
     Grid.Column="2" 
     Grid.ColumnSpan="3" 
-    Background="AliceBlue"
+    
     HorizontalContentAlignment="Center"
     VerticalContentAlignment="Center" 
     FontFamily="Arial Black" 
@@ -61,21 +68,30 @@
         />
 
         <WrapPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image x:Name="Image1" Source="/Images/97d4f462a21a628219cf8239680507de.jpg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image1_MouseLeftButtonUp" />
-            <Image x:Name="Image2" Source="/Images/2642427450733970b628aabc5691fb98.jpg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image2_MouseLeftButtonUp"/>
-            <Image x:Name="Image3" Source="/Images/8f6ea78c29e295339f8ba4851ffc4e07.jpg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image3_MouseLeftButtonUp" />
-            <Image x:Name="Image4" Source="/Images/tic-tac-toe.png" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image4_MouseLeftButtonUp" />
-            <Image x:Name="Image5" Source="/Images/square1.jpeg" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image5_MouseLeftButtonUp"/>
-            <Image x:Name="Image6" Source="/Images/square2.png" Width="150" Margin="20" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
+            <Image x:Name="Image1" Source="/Images/system.png" Width="173" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image1_MouseLeftButtonUp" Height="132" />
+            <Image x:Name="Image2" Source="/Images/list-text.png" Width="172" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image2_MouseLeftButtonUp" Height="124"/>
+            <Image x:Name="Image3" Source="/Images/currency.png" Width="186" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image3_MouseLeftButtonUp" Height="120" />
+            <Image x:Name="Image4" Source="/Images/tic-tac-toe.png" Width="173" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image4_MouseLeftButtonUp" Height="124" />
+            <Image x:Name="Image5" Source="/Images/microcar.png" Width="172" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image5_MouseLeftButtonUp" Height="125" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.692"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="Image6" Source="/Images/calculator2.png" Width="173" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="Image6_MouseLeftButtonUp" Height="130"/>
         </WrapPanel>
-        
+
         <Label x:Name="Footer"
                Grid.Column="0"
                Grid.Row="3"
                Grid.ColumnSpan="3"
                VerticalContentAlignment="Center"
                HorizontalContentAlignment="Center" 
-               Background="AliceBlue"
+              
                FontWeight="Bold"
                FontSize="23"
         />

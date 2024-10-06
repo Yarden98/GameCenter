@@ -1,4 +1,6 @@
 ﻿using GameCenter.Project;
+using GameCenter.Project.Calculator;
+using GameCenter.Project.CarGame;
 using GameCenter.Project.CurrencyConverter;
 using GameCenter.Project.Porject2;
 using GameCenter.Project.TicTacToe;
@@ -44,8 +46,8 @@ namespace GameCenter
                 "Image2" => "To do list  project",
                 "Image3" => "Currency convertor",
                 "Image4" => "Tic Tac Toe",
-                "Image5" => "Game No. 5 is a game about lorm ipsum & happy birthday",
-                "Image6" => "Game No. 6 is a game about lorm ipsum & happy birthday",
+                "Image5" => "Car Game",
+                "Image6" => "Calcilator",
                 _ => "please pick a game"
             };
         }
@@ -62,7 +64,7 @@ namespace GameCenter
         {
             Project2 project2 = new();
             ProjectPresentetationPage presentetion = new();
-            presentetion.OnStart("To-Do List", "" + "To-Do List is a versatile tool for effectively" +
+            presentetion.OnStart("a User Management System", "" + "a User Management System is a versatile tool for effectively" +
                 " managing user-related chores. You can add new users, amend their information," +
                 " and remove them as needed. It simplifies user administration for increased " +
                 "efficiency and organization.", Image1.Source, project2);
@@ -71,36 +73,60 @@ namespace GameCenter
         }
         private void Image2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            TodoList todoList = new TodoList();
-            Hide();
-            todoList.ShowDialog();
-            Show();
+            TodoList todoList = new();
+            ProjectPresentetationPage presentetion = new();
+            presentetion.OnStart("To-Do List", "" + "a To-Do List is a tool that helps you organize your daily responsibilities." +
+                " You can add new tasks to it and mark them as finished.", Image2.Source, todoList);
+            presentetion.ShowDialog();
+            
+       
 
         }
         private void Image3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             CurrencyConverterView currencyConverter = new();
-            Hide();
-            currencyConverter.ShowDialog();
-            Show();
+            ProjectPresentetationPage presentetion = new();
+            presentetion.OnStart("Currency Converter View", "" + "Currency Conversion View is a mechanism that allows you to define how much money " + 
+                "is converted between different quantities around the world.", Image3.Source,currencyConverter);
+            presentetion.ShowDialog();
         }
         private void Image4_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             TicTacToe ticTacToe = new();
-            Hide();
-            ticTacToe.ShowDialog();
-            Show();
+            ProjectPresentetationPage presentetion = new();
+            presentetion.OnStart("TicTacToe", "" + "TicTacToe, often abbreviated as TTT, "+ 
+                " is a classic two-player game where opponents take turns marking spaces in a 3x3 grid. "+ 
+                "The objective is to get three of their symbols (traditionally X or O) in a row horizontally,"+
+                " vertically, or diagonally before the opponent does. "+
+                "The game is simple yet strategic, making it a popular choice for quick and casual gameplay.", Image4.Source, ticTacToe);
+            presentetion.ShowDialog();
         }
         private void Image5_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            CarGame carGame = new CarGame();
+            ProjectPresentetationPage presentetion = new();
+            presentetion.OnStart("Car Game", "" + "Car Game is a car game where you have to"+
+                "dodge bombs that fall on you.", Image5.Source, carGame);
+            presentetion.ShowDialog();
 
         }
-        /*  private void OnImageClick(object sender, MouseButtonEventArgs e)
+
+        private void Image6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Calculator calculator = new Calculator();
+            ProjectPresentetationPage presentetion = new();
+            presentetion.OnStart("Calculator", "" + "a Calculator is a tool for performing mathematical calculations,"+ 
+                "featuring functions like addition, subtraction, multiplication, "+
+                "and division. Available in various forms,"+ 
+                "from handheld devices to digital applications,"+ 
+                "calculators are essential for quick and efficient mathematical operations in various contexts.", Image6.Source,calculator);
+            presentetion.ShowDialog();
+
+        }
+
+       /* private void OnImageClick(object sender, MouseButtonEventArgs e)
           {
-
-
-          }*/
+        }*/
 
     }
 }
