@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Boom.png" />
+    <None Remove="Images\calc.png" />
+    <None Remove="Images\calculator2.png" />
+    <None Remove="Images\Car.png" />
+    <None Remove="Images\carGameMain.png" />
+    <None Remove="Images\carGameVideo.mp4" />
+    <None Remove="Images\currency.png" />
+    <None Remove="Images\microcar.png" />
+    <None Remove="Images\profile.png" />
+    <None Remove="Images\system.png" />
+    <None Remove="Images\tic-tac-toe-two - Copy.png" />
+    <None Remove="Images\tic-tac-toe.png" />
+    <None Remove="Images\tictactoe.png" />
+    <None Remove="Images\ticTacToeMainPage.png" />
+    <None Remove="Images\Todolistt.png" />
+    <None Remove="Images\todolit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Boom.png" />
+    <Resource Include="Images\calculator2.png" />
+    <Resource Include="Images\Car.png" />
+    <Resource Include="Images\carGameVideo.mp4" />
+    <Resource Include="Images\currency.png" />
+    <Resource Include="Images\microcar.png" />
+    <Resource Include="Images\profile.png" />
+    <Resource Include="Images\system.png" />
+    <Resource Include="Images\tictactoe.png" />
+    <Resource Include="Images\todolit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

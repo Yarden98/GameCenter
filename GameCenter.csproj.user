@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="GameCenter.UserInputWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\Calculator\Calculator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\CarGame\CarGame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\CurrencyConverter\CurrencyConverterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\Porject2\Project2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\ProjectPresentetationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\TicTacToe\TicTacToe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Project\TodoList\TodoList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GameCenter.UserInputWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\Calculator\Calculator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\CarGame\CarGame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\CurrencyConverter\CurrencyConverterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\Porject2\Project2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\ProjectPresentetationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\TicTacToe\TicTacToe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Project\TodoList\TodoList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\CalculatorStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\GridStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="GameCenter.Project.CarGame.CarGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameCenter.Project.CarGame"
+        mc:Ignorable="d"
+      Title="Car Game" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <MediaElement x:Name="BackgroundVideo"
+                      LoadedBehavior="Manual" 
+                      Stretch="UniformToFill"
+                      MediaEnded="BackgroundVideo_MediaEnded"
+                      UnloadedBehavior="Stop"/>
+        
+        <Canvas x:Name="gameCanvas">
+            <Image x:Name="playerCarImage"
+                   HorizontalAlignment="Left" 
+                   Height="100"  
+                   VerticalAlignment="Top" 
+                   Width="60" Source="/Images/Car.png"/>
+
+            <TextBlock x:Name="score"
+           FontFamily="/Fonts/#Retro Gaming"
+           FontWeight="Bold"
+           FontSize="22"
+           Width="200" Height="50"
+           HorizontalAlignment="Left"
+           Canvas.Left="322" Canvas.Top="50"
+           VerticalAlignment="Center"/>
+
+        </Canvas>
+    </Grid>
+</Window>
